@@ -1,3 +1,3 @@
 # My website 
-you can find links to projects (not added yet)
+check out some projects and that's it so uhh
 added seperate files for JS
