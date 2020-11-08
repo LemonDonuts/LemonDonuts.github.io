@@ -51,7 +51,7 @@ body {
 
 .TextBox_AboutMe {
   background-color: white;
-  /*text-indent: 22%;*/
+  text-indent: 22%;
   width: 1200px;
   height: 1000px;
   margin: 20px;
@@ -86,7 +86,7 @@ body {
   padding-top: 40px;
   font-size:3vw;
   color:black;
-  text-indent:22%;
+  text-indent:18%;
 }
 
 html{
