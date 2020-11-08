@@ -51,19 +51,11 @@ body {
 
 .TextBox_AboutMe {
   background-color: white;
-  text-indent: 22%;
+  /*text-indent: 22%;*/
   width: 1200px;
   height: 1000px;
   margin: 20px;
   opacity: 0.90;
-}
-
-.LinkBox{
-  background-color: grey;
-  width: 500px;
-  height: 500px;
-  /*margin: 20px;
-  opacity: 0.90;*/
 }
 
 .ScratchProfile{
