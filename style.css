@@ -58,13 +58,27 @@ body {
   opacity: 0.90;
 }
 
-/*.ScratchProfile{
+.LinkBox{
+  background-color: grey;
+  width: 500px;
+  height: 500px;
+  /*margin: 20px;
+  opacity: 0.90;*/
+}
+
+.ScratchProfile{
   transform: scale(.7);
-  margin: 0;
   position: absolute;
-  top: 350px;
-  left: 105px;
-}*/
+  top: 0px;
+  left: 400px;
+}
+
+.GithubProfile{
+  transform: scale(.2);
+  position: absolute;
+  top: -150px;
+  left: 350px;
+}
 
 .p1{
   color:black;
