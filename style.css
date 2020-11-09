@@ -73,19 +73,21 @@ body {
 
 .p1{
   color:black;
-  font-size:2;
+  font-size:5;
   margin-top: 0px;
   margin-left: 250px;
   color: black;
   font-family: roboto;
+  word-wrap: break-word;
 }
 
 .h1{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top:40px;
-  font-size:6;
+  font-size:10;
   color:black;
   text-indent:21%;
+  word-wrap: break-word;
 }
 
 html{
