@@ -73,7 +73,7 @@ body {
 
 .p1{
   color:black;
-  font-size:1.5;
+  font-size:2;
   margin-top: 0px;
   margin-left: 250px;
   color: black;
@@ -83,7 +83,7 @@ body {
 .h1{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top:40px;
-  font-size:3;
+  font-size:6;
   color:black;
   text-indent:21%;
 }
