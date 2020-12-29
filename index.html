@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html>
-<title>Max Damonte [TEST]</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0;" />
-<head>
-	<script src="script.js">
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" type="image/png" href="favicon.png" sizes="50x50">
-	<body>
-		<div class="btns">
-			<button class="button1"><u>Home</u></button>
-                  <button class="button2"><u>Projects</u></button>
-                  <button class="button3"><u>Skills</u></button>                  
-                  <!--<input type="button" class="button" value="About"/>
-                  <input type="button" class="button" value="Projects"/>
-                  <input type="button" class="button" value="Skills"/>-->
-                  <!--<div class="StickyTopNavBox"></div>-->
-              </div>
-                <div class="h1">Max Damonte</div>
-                  <div class="p1"> 
-                    <strong>
-                      Hello! My name is Max. I love coding and fiddling with electronics.
-                      My coding adventure started back in march of 2020 when my brother showed me scratch.
-                      I thought it was really cool you could command things to do stuff by only putting blocks
-                      together. I kept practicing over quarantine and got better! After a while I started
-                      learning JavaScript, python, and web development! I am currently making a vanilla JS
-                      logic gate simulator with my brother. You can find me on lots of websites including Github, 
-                      Scratch, and repl.it. :)
-                    </strong>
-                  </div>
-              <div class="ProfileImage"> 
-              <img src="profileimg.png" alt="RectImage"/>
-              </div>
-                <div class="footer">
-                  <footer>
-                    <p1>
-                      <strong>
-                      [©2020 V-1.2 By Max Damonte]
-                      </strong>
-                    </p1>
-                </footer>
-            </body>
-        </head>
+  <title>Max Damonte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+  <head>
+	  <script src="script.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="50x50">
+	    <body>
+		    <div class="navbox">
+          <div class="btns">
+			      <button class="button1"><u>Home</u></button>
+            <button class="button3"><u>Skills</u></button>                  
+            <button class="button2"><u>Projects</u></button>
+          </div>
+		    </div>
+          <div class="h1">Max Damonte<div class="SpacerLine"><strong>--------------------------</strong></div></div>
+            <div class="p1"> 
+              <strong>
+                Hello! My name is Max. I love programming, mountain biking, gaming, and racing rc rally cars! You can find me on many coding websites including <a target="_blank" rel="noopener noreferrer"
+                href="https://scratch.mit.edu/users/Math-Coding-Scratch">Scratch</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/MaxDamonte">Github</a>, and <a target="_blank" rel="noopener noreferrer"href="https://repl.it/@MathCodingPy">Repl.it</a>. I am currently working on many programming projects, one of them is a python terminal. I am also making a javascript <a target="_blank" rel="noopener noreferrer"href="https://en.wikipedia.org/wiki/Logic_gate">Logic Gate</a> simulator with my brother. I began coding back in March of 2020 when stay at home orders began and my brother showed me Scratch. 
+              </strong>
+            </div>
+          <div class="loader-wrapper">
+           <span class="loader"><span class="loader-inner"></span></span>
+         </div>
+        <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").delay(500).fadeOut("slow");
+          });
+      </script>
+    </body>
+  </head>
 </html>
