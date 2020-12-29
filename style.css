@@ -1,45 +1,18 @@
+/* Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html, body {
-	overflow-x: hidden;
-  overflow-y: true;
-  padding: 20;
-  margin: 50;
-  -webkit-user-select: true; 
-  -ms-user-select: true; 
-  user-select: true; 
-  scroll-behavior: smooth;
-}
+html, body {overflow-x: hidden;overflow-y: true;padding: 20;margin: 50;-webkit-user-select: true;-ms-user-select: true;user-select: true;scroll-behavior: smooth;}
 canvas {width: 100%; height: 100%;padding: 0;}
-
-body {
- 	background: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-
-}
-/*---------------------------- \
-| Buttons                      |
-\-----------------------------*/
-.button1:hover{
-   background-color: white;
-   color: black;
-}
-.button2:hover{
-   background-color: white;
-   color: black;
-}
-.button3:hover{
-   background-color: white;
-   color: black;
-}
+body {background: #101010;background-position: center;background-repeat: no-repeat;background-size: cover;margin: 0;padding: 0;}
+/* buttons */
+.button1:hover {background-color: white;color: black;}
+.button2:hover {background-color: white;color: black;}
+.button3:hover {background-color: white;color: black;}
 .button1 {
-  transition: background 400ms;
+  transition: background 600ms;
   padding: 12px 16px;
-  background-color:black;
+  background-color: #3d3d3d;
   border-radius: 2px;
   border: none;
   font-family: Roboto;
@@ -52,9 +25,9 @@ body {
   cursor: pointer;
 }
 .button2 {
-  transition: background 400ms;
+  transition: background 600ms;
   padding: 12px 16px;
-  background-color:black;
+  background-color: #3d3d3d;
   border-radius: 2px;
   border: none;
   font-family: Roboto;
@@ -66,124 +39,72 @@ body {
   margin: 12px 4px;
   cursor: pointer;
 }
-.button3 {
-  transition: background 400ms;
-  padding: 12px 16px;
-  background-color:black;
-  border-radius: 2px;
-  border: none;
-  font-family: Roboto;
-  color: white;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 12px 4px;
-  cursor: pointer;
-}
-
-/* ripple effect */
-span.ripple {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple 600ms linear;
-  background-color: red;
-}
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-.btns{
-  margin-left: 100px;
-  margin-top: 10px;
-}
-
-/*.StickyTopNavBox{
-  background-color: green;
-  width: 1700px;
-  height: 50px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top:0px;
-}*/
-
-.ProfileImage{
-  transform: scale(0.40);
-  margin: 0;
-  position: static;
-  right: 400px;
-  top: 100px;
-}
-/* probably going to abandon this */
-/*.TextBox_AboutMe {
-  background-color: white;
-  width: 80%;
-  height: 1000px;
-  margin-left: 100px;
-}*/
-
-/*---------------------------- \
-| Text                         |
-\-----------------------------*/
+.button3 {transition: background 600ms;padding: 12px 16px;background-color:#3d3d3d;border-radius: 2px;border: none;font-family: Roboto;color: white;outline: 0;text-align: center;text-decoration: none;font-size: 16px;margin: 12px 4px;cursor: pointer;}
+.btns{margin-left: 20px;margin-top: 3px;}
+/* Text */
 .h1{
-  text-indent: 38%;
+  text-align: center;
   color: #fff; /* #ffb300 */
-  font-weight: 900;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: Patua One, cursive;
   padding-top:100px;
   font-size: 45px;
-
 }
 .p1{
+  /*text-align: center;*/
+  line-height: 1.6;
   color:#fff;
-  font-size:15px;
-  margin-top: 50px;
-  margin-left: 250px;
+  font-size: 21px;
+  font-family: Ubuntu Mono; 
+  word-wrap: break-word;
+  margin-top: 30px;
+  margin-left: 450px;
+  margin-right: 450px;
+}
+/* navigation box */
+.navbox{margin-top: 0px;margin-left: 0px;width: 100%;height: 70px;background-color: #3d3d3d;position: fixed;z-index: 1;}
+/* this is the line under my name*/
+.SpacerLine{color:#1cb5e8;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;font-weight: 900;font-size: 50px;text-shadow: none;font-family: Roboto;}
+/* making mobile friendly [partially compressed] */
+@media (max-width: 800px) {
+  /*i-pad/tablets*/ 
+  .h1{font-size: 35px; }
+  .p1{
+  line-height: 1.6;
+  color:#fff;
+  font-size:17px;
   font-family: roboto;
   word-wrap: break-word;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-/*---------------------------- \
-| scrollbar                    |
-\-----------------------------*/
-::-webkit-scrollbar {width: 7px;}
-::-webkit-scrollbar-track {border-radius: 10px;}
-::-webkit-scrollbar-thumb {background: #f06813; border-radius: 10px;} /*#F2773F*/
-::-webkit-scrollbar-thumb:hover {background: #f06813; }
-
-/*-------------------------------------\
-| Mobile friendly still in progress    |
-\------------------------------------ */
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
+  margin-top: 30px;
+  margin-left: 130px;
+  margin-right: 130px;
+  }  
+  .SpacerLine{
+   color:#1cb5e8;
+  -webkit-user-select: none;     
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+  font-weight: 900;
+  font-size: 50px;
   }
 }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
-/* everything else above mobile friendly section is fit to go with computer/pc */
-
-/*-----------------------------------\
-| Footer                             |
-\-----------------------------------*/
-
-.footer{
-  color: #fff;
-  font-family: roboto;
-  margin-left: 25px;
-}
+@media (max-width: 700px) {  /*i-pad/tablets*/ 
+.h1{font-size: 30px;}
+.p1{line-height: 1.6;color:#fff;font-size:17px;font-family:roboto;word-wrap:break-word;margin-top:30px;margin-left:70px;margin-right:70px;}  
+.SpacerLine{color:#1cb5e8;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:900;font-size:50px;}}
+@media (max-width:600px) { /* mobile phones */ 
+  .button1, .button2, .button3{padding: 12px 16px;}
+  .btns{margin-top:3px;position:fixed;left:40%;margin-left:-90px;}
+  .h1{font-size:30px;}
+  .p1{line-height:1.6;color:#fff;font-size:15px;font-family:roboto;word-wrap:break-word;margin-top:30px;margin-left:25px;margin-right:25px;}
+  .SpacerLine{color:#1cb5e8;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:900;font-size:40px;}}
+/*link style and hover [compressed] */
+a {background-color: #101010;color: #14e34b;transition: color .5s;text-decoration: none;}
+a:hover {color: #1cb5e8;text-decoration: underline;}
+/* website loading in [compressed] */
+.loader-wrapper{z-index: 9; width: 100%;height: 100%;position: absolute;top:0;left:0;background-color: black;display:flex;justify-content: center;align-items: center;}
+.loader {display: inline-block;width: 30px;height: 30px;position: relative;border: 4px solid #fff;animation: loader 2s infinite ease;}
+.loader-inner {vertical-align: top;display: inline-block;width: 100%;background-color: #fff;animation: loader-inner 2s infinite ease-in}
+@keyframes loader {0% {transform: rotate(0deg);}25% {transform: rotate(180deg);}50% {transform: rotate(180deg);}75% {transform: rotate(360deg);}100% {transform: rotate(360deg);}}
+@keyframes loader-inner {0% {background-color:#3cf042;height: 0%;}25% {height: 0%;background-color:#3cf042;}50% {height: 100%;background-color: #3cf0e1;}75% {height: 100%;background-color: #3cf0e1;}100% {height: 0%;background-color:#3cf042;}}
 
