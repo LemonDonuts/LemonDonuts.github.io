@@ -6,40 +6,8 @@ html, body {overflow-x: hidden;overflow-y: true;padding: 20;margin: 50;-webkit-u
 canvas {width: 100%; height: 100%;padding: 0;}
 body {background: #101010;background-position: center;background-repeat: no-repeat;background-size: cover;margin: 0;padding: 0;}
 /* buttons */
-.button1:hover {background-color: white;color: black;}
-.button2:hover {background-color: white;color: black;}
-.button3:hover {background-color: white;color: black;}
-.button1 {
-  transition: background 600ms;
-  padding: 12px 16px;
-  background-color: #3d3d3d;
-  border-radius: 2px;
-  border: none;
-  font-family: Roboto;
-  color: white;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 12px 4px;
-  cursor: pointer;
-}
-.button2 {
-  transition: background 600ms;
-  padding: 12px 16px;
-  background-color: #3d3d3d;
-  border-radius: 2px;
-  border: none;
-  font-family: Roboto;
-  color: white;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 12px 4px;
-  cursor: pointer;
-}
-.button3 {transition: background 600ms;padding: 12px 16px;background-color:#3d3d3d;border-radius: 2px;border: none;font-family: Roboto;color: white;outline: 0;text-align: center;text-decoration: none;font-size: 16px;margin: 12px 4px;cursor: pointer;}
+.button1:hover, .button2:hover, .button3:hover {background-color: white;color: black;}
+.button1, .button2, .button3 {transition: background 600ms;padding: 12px 16px;background-color: #3d3d3d;border-radius: 2px;border: none;font-family: Roboto; color: white;outline: 0;text-align: center;text-decoration: none;font-size: 16px;margin: 12px 4px;cursor: pointer;}
 .btns{margin-left: 20px;margin-top: 3px;}
 /* Text */
 .h1{
@@ -53,7 +21,7 @@ body {background: #101010;background-position: center;background-repeat: no-repe
   /*text-align: center;*/
   line-height: 1.6;
   color:#fff;
-  font-size: 21px;
+  font-size: 23px;
   font-family: Roboto; 
   word-wrap: break-word;
   margin-top: 30px;
@@ -88,7 +56,7 @@ body {background: #101010;background-position: center;background-repeat: no-repe
   font-size: 50px;
   }
 }
-@media (max-width: 700px) {  /*i-pad/tablets*/ 
+@media (max-width: 700px) { 
 .h1{font-size: 30px;}
 .p1{line-height: 1.6;color:#fff;font-size:17px;font-family:roboto;word-wrap:break-word;margin-top:30px;margin-left:70px;margin-right:70px;}  
 .SpacerLine{color:#1cb5e8;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:900;font-size:50px;}}
@@ -102,7 +70,19 @@ body {background: #101010;background-position: center;background-repeat: no-repe
 a {background-color: #101010;color: #14e34b;transition: color .5s;text-decoration: none;}
 a:hover {color: #1cb5e8;text-decoration: underline;}
 /* website loading in [compressed] */
-.loader-wrapper{z-index: 9; width: 100%;height: 100%;position: absolute;top:0;left:0;background-color: black;display:flex;justify-content: center;align-items: center;}
+.loader-wrapper{
+  z-index: 9; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .loader {display: inline-block;width: 30px;height: 30px;position: relative;border: 4px solid #fff;animation: loader 2s infinite ease;}
 .loader-inner {vertical-align: top;display: inline-block;width: 100%;background-color: #fff;animation: loader-inner 2s infinite ease-in}
 @keyframes loader {0% {transform: rotate(0deg);}25% {transform: rotate(180deg);}50% {transform: rotate(180deg);}75% {transform: rotate(360deg);}100% {transform: rotate(360deg);}}
